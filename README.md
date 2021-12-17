@@ -54,10 +54,12 @@ O endpoint (local) padrão do sistema é localhost:8080/v1/
 - Implementação do Spring Security
 - Implementação do Swagger para documentação
 
-![](https://github.com/gahamartins/Desafio-Orange-Talents/blob/main/images/1-springInitializer.PNG)
+A estrutura do projeto ficou assim:
+
+![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/estrutura.PNG)
 
 ```
-Figura 1 - Tela de configuração do Spring Initializr
+Figura 1 - Estrutura do projeto
 ```
 ## Login no sistema
 
@@ -72,7 +74,7 @@ Sendo que o admin tem acesso a todos os endpoints e o user também, exceto os qu
 Ao efetuar o login, é retornado um JSON com o token JWT. Este token deve ser usado no header da requisição para que a api seja liberada.
 
 Exemplo de requisição (POST) no endpoint localhost:8080/v1/auth e retorno de token:
-![](https://github.com/gahamartins/Desafio-Orange-Talents/blob/main/images/2-applicationProperties.PNG)
+![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/login.png)
 ```
 Figura 2 - Requisição de login
 ```
@@ -81,9 +83,15 @@ Figura 2 - Requisição de login
 
 Para a criação dos usuários foram feitas algumas validações, então nenhum campo (exceto data de nascimento) pode ser vazio ou nulo,
 além de que o email e cpf devem ter formatos válidos e não podem já existir no BD. Exemplo de retorno com erros de validação:
-![](https://github.com/gahamartins/Desafio-Orange-Talents/blob/main/images/3-userModel.PNG)
+![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/criarerrousuario.png)
 ```
-Figura 3 – Modelo de dado para o Usuário
+Figura 3 – Request com erros
+```
+
+Exemplo de retorno com sucesso:
+![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/criarusuario.png)
+```
+Figura 4 – Request com sucesso
 ```
 
 ## Criação de veículos
@@ -91,9 +99,9 @@ Figura 3 – Modelo de dado para o Usuário
 Para a criação de veículos, o ideal seria que o Front-End que fosse usar a aplicação consumisse a api da Fipe para buscar os dados.
 São necessários apenas os dados marca, modelo e ano do veículo para cadastro, mas o retorno deste dado consome a api da Fipe em tempo real
 retornando também o valor de tabela do veículo e dia/estado de rodízio, baseado na regra de negócio apresentada. Veja um exemplo:
-![](https://github.com/gahamartins/Desafio-Orange-Talents/blob/main/images/4-carModel.PNG)
+![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/criarveiculo.png)
 ```
-Figura 4 - Modelo de dado para o Carro
+Figura 5 - Request para criar veículo
 ```
 
 
@@ -104,12 +112,14 @@ Para atribuir um carro a um usuário, basta passar como parâmetros os seus resp
 ## Swagger ui
 
 O Swagger foi implementado para documentar a api, mostrando todos os endpoints e exemplos de requisição. Veja a tela inicial do Swagger-ui, que pode ser acessada no endpoint http://localhost:8080/swagger-ui.html
-![](https://github.com/gahamartins/Desafio-Orange-Talents/blob/main/images/4-carModel.PNG)
+![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/swagger.PNG)
 ```
-Figura 4 - Modelo de dado para o Carro
+Figura 6 - Tela inicial do swagger
 ```
 
-
+OBS.: Caso rode o projeto no IntelliJ Idea talvez seja necessário colocar o seguinte comando em Settings->Build, Exec. Deplyment->Compiler->Shared build proccess VM options<br>
+-Djps.track.ap.dependencies=false<br>
+devido a alguma interferência com o Lombok.
 
 
 
