@@ -63,8 +63,8 @@ Figura 1 - Tela de configuração do Spring Initializr
 
 Foram criadas duas credenciais para autenticação no sistema:
 
-username:password
-admin@email.com:admin
+username:password<br>
+admin@email.com:admin<br>
 user@email.com:user
 
 Sendo que o admin tem acesso a todos os endpoints e o user também, exceto os que excluem quaisquer dados no BD.
@@ -76,9 +76,6 @@ Exemplo de requisição (POST) no endpoint localhost:8080/v1/auth e retorno de t
 ```
 Figura 2 - Requisição de login
 ```
-Ou seja, foi criado localmente um banco de dados localizado na porta 5432 com o nome
-“orange-talents-challenge” e dada a permissão para o Java acessar e editar ele dentro deste
-projeto.
 
 ## Criação de usuários
 
@@ -116,7 +113,7 @@ Figura 4 - Modelo de dado para o Carro
 
 
 
-**Código-Fonte** : 
+**Código-Fonte** : https://github.com/gabrielhamartins/estudoapi
 
 **Gabriel H. A. Martins**
 
