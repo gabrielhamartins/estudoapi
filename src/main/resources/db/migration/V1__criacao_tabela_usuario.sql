@@ -1,0 +1,7 @@
+CREATE TABLE tb_usuario(
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    cpf VARCHAR(11) NOT NULL UNIQUE,
+    nascimento DATE
+);

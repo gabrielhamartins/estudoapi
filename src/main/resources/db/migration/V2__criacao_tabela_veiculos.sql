@@ -1,0 +1,6 @@
+CREATE TABLE tb_veiculo(
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(255) NOT NULL,
+    modelo VARCHAR(255) NOT NULL,
+    ano VARCHAR(25) NOT NULL
+);
