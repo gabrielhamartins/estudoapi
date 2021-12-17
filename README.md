@@ -88,7 +88,7 @@ além de que o email e cpf devem ter formatos válidos e não podem já existir 
 Figura 3 – Request com erros
 ```
 
-Exemplo de retorno com sucesso:
+Exemplo de retorno com sucesso:<br>
 ![](https://github.com/gabrielhamartins/estudoapi/blob/master/images/criarusuario.png)
 ```
 Figura 4 – Request com sucesso
@@ -117,9 +117,9 @@ O Swagger foi implementado para documentar a api, mostrando todos os endpoints e
 Figura 6 - Tela inicial do swagger
 ```
 
-OBS.: Caso rode o projeto no IntelliJ Idea talvez seja necessário colocar o seguinte comando em Settings->Build, Exec. Deplyment->Compiler->Shared build proccess VM options<br>
--Djps.track.ap.dependencies=false<br>
-devido a alguma interferência com o Lombok.
+OBS.: Caso rode o projeto no IntelliJ Idea talvez seja necessário colocar o seguinte comando em Settings->Build, Exec. Deplyment->Compiler->Shared build proccess VM options<br><br>
+-Djps.track.ap.dependencies=false<br><br>
+Devido a alguma interferência com o Lombok.
 
 
 
