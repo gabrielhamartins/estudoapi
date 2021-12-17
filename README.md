@@ -45,14 +45,14 @@ Se ficou fácil, te desafiamos a:
 
 O endpoint (local) padrão do sistema é localhost:8080/v1/
 
-0 - Criação dos modelos de dados usando MariaDB e Flyway
-1 - CRUD's de usuário e veículo funcionando corretamente, tudo sendo testado no postman
-2 - Criação das DTO's usando o MapStruct
-3 - Handler customizado para as exceptions
-4 - Validações
-5 - Consumir a API da FIPE usando o OpenFeign
-6 - Implementação do Spring Security
-7 - Implementação do Swagger para documentação
+- Criação dos modelos de dados usando MariaDB e Flyway
+- CRUD's de usuário e veículo funcionando corretamente, tudo sendo testado no postman
+- Criação das DTO's usando o MapStruct
+- Handler customizado para as exceptions
+- Validações
+- Consumir a API da FIPE usando o OpenFeign
+- Implementação do Spring Security
+- Implementação do Swagger para documentação
 
 ![](https://github.com/gahamartins/Desafio-Orange-Talents/blob/main/images/1-springInitializer.PNG)
 
