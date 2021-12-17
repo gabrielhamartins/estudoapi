@@ -63,9 +63,9 @@ Figura 1 - Tela de configuração do Spring Initializr
 
 Foram criadas duas credenciais para autenticação no sistema:
 
-username:password<br>
-admin@email.com:admin<br>
-user@email.com:user
+username : password<br>
+admin@email.com : admin<br>
+user@email.com : user
 
 Sendo que o admin tem acesso a todos os endpoints e o user também, exceto os que excluem quaisquer dados no BD.
 
